@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+body {
+    background-image: url("https://images.unsplash.com/photo-1600346019001-8d56d1b51d59?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fHBpenphJTIwYmFja2dyb3VuZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60");
+    background-size: cover;
+    color: #68a86d;
+}
+.jumbotron{
+    background-color: #eeffef;
+}
+.one-h3{
+    margin-right: 2rem;
+    font-weight: 600;
+}
+.two-h3{
+    margin-right: 2rem;
+    font-weight: 600;
+}
+.three-h3{
+    margin-right: 2rem;
+    font-weight: 600;
+}
+
+.one{
+    margin-right: 2rem;
+    font-weight: 600;
+    cursor: pointer;
+} 
+.one:hover{
+    box-shadow: 2px 2px 8px 2px #0b1609;
+}
+.two{
+    margin-right: 3.5rem;
+    font-weight: 600;
+    cursor: pointer;
+} 
+.two:hover{
+    box-shadow: 2px 2px 8px 2px #0b1609;
+}
+.three{
+    margin-right: 3.5rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+.three:hover{
+    box-shadow: 2px 2px 8px 2px #0b1609;
+}
+.one-img{
+    margin-left: 1rem;
+}
+p.one-p:hover{
+    cursor: pointer;
+    text-shadow: 0 0 4px #00FF9C;
+}
+.two-p:hover{
+    cursor: pointer;
+    text-shadow: 0 0 4px #00FF9C;
+}
+.three-p:hover{
+    cursor: pointer;
+    text-shadow: 0 0 4px #00FF9C;
+}
+.pacifico{
+    font-family: 'Satisfy', cursive !important;
+    font-weight: 600; 
+    
+}
+.display-1{
+    text-shadow: 2px 2px 8px #0b1609;
+}
+.display-1:hover{
+    cursor: pointer;
+    animation: tilt-shaking 0.25s infinite;
+}
+@keyframes tilt-shaking {
+0% { transform: rotate(0deg); }
+25% { transform: rotate(5deg); }
+50% { transform: rotate(0eg); }
+75% { transform: rotate(-5deg); }
+100% { transform: rotate(0deg); }
+}
+.italia{
+    color: #092e0e;
+}
+
+
+.icon{
+    width: 30px;
+    height: 30px;
+    animation: jump-shaking 0.83s infinite;
+}
+@keyframes jump-shaking {
+    0% { transform: translateX(0) }
+    25% { transform: translateY(-9px) }
+    35% { transform: translateY(-9px) rotate(17deg) }
+    55% { transform: translateY(-9px) rotate(-17deg) }
+    65% { transform: translateY(-9px) rotate(17deg) }
+    75% { transform: translateY(-9px) rotate(-17deg) }
+    100% { transform: translateY(0) rotate(0) }
+}
+  
+.container-fluid {
+margin: 0 auto;
+width: 960px;
+}
+
+
+.whatwedo img {
+width: 200px;
+height: 200px;
+border-radius: 50%;
+}
+
+h1, h3 {
+text-align: center;
+}
+
+h1.pacifico {
+font-family: 'Pacifico', cursive;
+}
+
+.col-md-4.col-sm-12 {
+text-align: center;
+}
+
+@media (max-width: 580px){
+    .display-1 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    } 
+    .pacifico{
+        font-size: 1.5rem;
+    }
+    .icon{
+        width: 20px;
+        height: 20px;
+    }
+    .whatwedo img{
+        margin-left: 8.5rem;
+    }
+    .container-fluid {
+        width: 100%;
+    }
+    .row-1{
+        margin-bottom: 2rem;
+    }
+    .row-2{
+        margin-bottom: 2rem;
+    }
+    .form-select{
+        max-width: 180px;
+        margin-left: 8.5rem;
+        
+    }
+    .checkout{
+        margin-top: 1rem;
+    }
+    
+}
+@media(min-width: 300px) and (max-width: 500px){
+    .whatwedo img{
+        margin-left: 5rem;
+    }
+    .form-select{
+        max-width: 180px;
+        margin-left: 6.7rem;
+        
+    }
+    .complete{
+        margin-top: 1rem;
+    }
+}
+@media(min-width: 250px) and (max-width: 390px){
+    .table{
+        
+        font-size: 13px;
+    }
+    .whatwedo img{
+        margin-left: 3rem;
+    }
+    .form-select{
+        margin-left: 3rem;
+    }
+    .complete{
+        margin-top: 1rem;
+    }
+}
+@media(max-width: 360px){
+    .table{
+        font-size: 10px;
+    }
+    .location{
+        margin-top: 1rem;
+    }
+}
+@media(max-width: 280px){
+    .whatwedo img{
+        margin-left: 2rem;
+        width: 150px;
+        height: 150px;
+    }
+    .form-select{
+        margin-left: 1rem;
+    }
+    .one-h3{
+        margin-left: 3rem;
+    }
+    .two-h3{
+        margin-left: 3rem;
+    }
+    .three-h3{
+        margin-left: 3rem;
+    }
+    .table{
+        font-size: 7.5px;
+    }
+    input{
+        width: 150px
+    };
+}

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel='stylesheet' href='css/style.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <title>pizza delivery</title>
+</head>
+<body>
+    <br>
+    
+    <ul class="nav justify-content-end bg-blue color-text-secondary mr-6">
+
+        <li class="nav-item">
+          <a class="nav-link  bg-success text-white" href="#aboutUs">Welcome</a>
+        </li>
+    
+        <li class="nav-item">
+          <a class="nav-link  bg-success text-white" href="#contact">Contacts</a>
+        </li>
+      </ul>
+      <br>
+      <div class="container-fluid">
+        <div class="jumbotron">
+    
+          <div class="page-header ">
+            <h1 class="display-1">Pizza  <span><img class="icon" src="css/pizza2.png" alt=""></span> <span class="italia">Italia</span></h1>
+          </div>
+    
+    
+    
+          <div class="whatwedo">
+            <h1 class="pacifico">Life is not about finding yourself. It's about finding pizza, place an order!</h1>
+    
+            <br>
+            <br>
+            
+            <div class="row">
+              <div class="col-md-4 row-1">
+    
+                <img class='one one-img ' src="https://images.unsplash.com/photo-1534308983496-4fabb1a015ee?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=755&q=80" alt="Design" id="aboutUs">
+                <br>
+                <br>
+                <h3 class="one-h3">Pizza</h3>
+                <br>
+                <p class="one-p">Our pizza gives you the best of blend of Kenyan and Italian flavours. Indulge yourself , no guilty pleasures only the good stuff.</p>
+                <select class="form-select size">
+                  <option label="Small" value="500">Small</option>
+                  <option label="Medium" value="700">Medium</option>
+                  <option label="Large" value="1000">Large</option>
+                </select>
+              </div>
+              
+              <div class="col-md-4 row-2">
+                <img class='two  align-middle' src="https://images.unsplash.com/photo-1550401728-539ebf40d9e9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80" alt="Development">
+                <br>
+                <br>
+                <h3 class="two-h3">Toppings</h3>
+                <br>
+                <p class='two-p'> We know pizza is awesome but our high quality toppings will definetely take your
+                  pizza to the next level.</p>
+    
+    
+                <select class="form-select toppings">
+                  <option label="Olives" value="100">Olives</option>
+                  <option label="Cheese" value="50">Cheese</option>
+                  <option label="Pepperoni" value="80">Pepperoni</option>
+                </select>
+    
+              </div>
+              <div class="col-md-4 row-3">
+                <img class='three ' src="https://images.unsplash.com/photo-1558701210-136ff9d4b3c3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="Product">
+                <br>
+                <br>
+                <h3 class="three-h3">Crust</h3>
+                <br>
+                <p class='three-p'>Your crust your choice we are here to facilitate your pizza experience to the
+                  next level. Try a different kind of crust today.</p>
+    
+                <select class="form-select crust">
+                  <option label="Stuffed" value="500">Stuffed</option>
+                  <option label="Gluten-Free" value="200">Gluten-Free</option>
+                  <option label="Crispy" value="300">Crispy</option>
+                </select>
+    
+              </div>
+            </div>
+          </div>
+
+          <br>
+          <br>
+          <div class="text-center">
+            <button class="btn btn-success order" type="submit">Order</button>
+          </div>
+          <br>
+    
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Order No.</th>
+                <th scope="col">Pizza Size</th>
+                <th scope="col">Toppings</th>
+                <th scope="col">Crust</th>
+                <th scope="col">Total</th>
+              </tr>
+            </thead>
+            <tbody id="pizza">
+              <tr>
+                <th scope="row">1</th>
+                <td id="size"></td>
+                <td id="toppings"></td>
+                <td id="crust"></td>
+                <td id="total"></td>
+              </tr>
+            </tbody>
+          </table>
+    
+          <div class="additional-buttons">
+            <div class="text-center">
+              <button class="btn btn-success add-pizza" type="submit">Add Another</button>
+              <div class="additional-info">
+                <h3>The total is: <span></span></h3>
+                <h5>Would you like delivery for an additional <em>200</em>?</h5>
+                <h4>Your order has been received! We are dispatching our rider to <span></span></h4>
+                <div class="location text-center">
+                  <input type="text" size="30" placeholder="enter your location" required />
+                  <button class="btn btn-success complete" type="submit">Complete</button>
+                </div>
+              </div>
+              <br>
+              <button class="btn btn-success yes" type="submit">Yes</button>
+              <button class="btn btn-success no" type="submit">No</button>
+            </div>
+            <div class="text-right checkout">
+              <button class="btn btn-success check-out" type="submit">Checkout</button>
+            </div>
+          </div>
+          <br><br>
+          <hr>
+          <div class="text-center">
+            <address id="contact">
+              <strong>Pizza Italia</strong><br>
+              Menelik Heights, Off Ngong Road<br>
+              Nairobi, 00200-Kilimani<br>
+            </address>
+    
+            <address>
+              <strong>Customer Care</strong><br>
+              <p href="brendaandeso4@gmail.com">@Pizza Italia</p>
+            </address>
+          </div>
+        </div>
+    
+      </div>
+    </div>
+  <script src="js/jquery-3.4.1.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>
